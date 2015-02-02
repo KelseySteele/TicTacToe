@@ -6,26 +6,37 @@
  <body>
  <script src="tttscript.js"></script>
  <div class= "container">
-    <div class= "title">Kelsey's Tic Tac Toe Game</div>
-    <div class= "subTitle">Hi, I'm Kelsey. Welcome to my game! Find a friend, pour some tea and play some tic tac toe.
-    X goes first. Enjoy! :) </div>
-   <div id = "box">
+    <div class= "title">
+        <h1>Kelsey's Tic Tac Toe Game</h1>
+    </div>
     
-    <input type="button" id = "btn1" onclick = "clickBtn('btn1')" />
-    <input type="button" id = "btn2" onclick = "clickBtn('btn2')" />
-    <input type="button" id = "btn3" onclick = "clickBtn('btn3')" />
-    <input type="button" id = "btn4" onclick = "clickBtn('btn4')" />
-    <input type="button" id = "btn5" onclick = "clickBtn('btn5')" />
-    <input type="button" id = "btn6" onclick = "clickBtn('btn6')" />
-    <input type="button" id = "btn7" onclick = "clickBtn('btn7')" />
-    <input type="button" id = "btn8" onclick = "clickBtn('btn8')" />
-    <input type="button" id = "btn9" onclick = "clickBtn('btn9')" />
+ <div class= "subTitle">
+    <h2>Hi, I'm Kelsey. Welcome to my game! Find a friend, pour some tea and play some tic tac toe.
+        X goes first. Enjoy! :)
+    </h2>
+    </div>
+    
+        <div id = "box">
+            <input type="button" id = "btn1" onclick = "clickBtn('btn1')" />
+            <input type="button" id = "btn2" onclick = "clickBtn('btn2')" />
+            <input type="button" id = "btn3" onclick = "clickBtn('btn3')" />
+            <input type="button" id = "btn4" onclick = "clickBtn('btn4')" />
+            <input type="button" id = "btn5" onclick = "clickBtn('btn5')" />
+            <input type="button" id = "btn6" onclick = "clickBtn('btn6')" />
+            <input type="button" id = "btn7" onclick = "clickBtn('btn7')" />
+            <input type="button" id = "btn8" onclick = "clickBtn('btn8')" />
+            <input type="button" id = "btn9" onclick = "clickBtn('btn9')" />
+       </div>
+       
+   <input type="button" id = "btnReset" onclick = "reset()" value = "Restart game"/>
    
-   </div>
-   
-   <input type="button" id = "btnReset" onclick = "reset()" value = "Reset"/>
- 
-     </div>
+   <div id= displayWins>
+                <p id= "Xwins"></p>
+                <p id= "Owins"></p>
+                
+    <input type="button" id = "btnResetWins" onclick = "game.restartWins()" value = "Reset number of wins" />
+    </div>
+</div>
   
  </body> 
   
