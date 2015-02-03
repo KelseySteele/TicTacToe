@@ -3,18 +3,18 @@
 <head>
   <link rel="stylesheet" href="tttstyle.css">
 </head>
- <body>
+ <body onload= "game.firstPlayerDisplay()">
  <script src="tttscript.js"></script>
  <div class= "container">
     <div class= "title">
         <h1>Kelsey's Tic Tac Toe Game</h1>
     </div>
     
- <div class= "subTitle">
-    <h2>Hi, I'm Kelsey. Welcome to my game! Find a friend, pour some tea and play some tic tac toe.
-        X goes first. Enjoy! :)
-    </h2>
+    <div class= "subTitle">
+        <p>Hi, I'm Kelsey. Welcome to my game! Find a friend, pour some tea and play some tic tac toe. Start by clicking on one of the boxes below.
+         Enjoy! :)  </p>
     </div>
+    <h2 id="firstPlayerDisplay"></h2>
     
         <div id = "box">
             <input type="button" id = "btn1" onclick = "clickBtn('btn1')" />
@@ -28,9 +28,8 @@
             <input type="button" id = "btn9" onclick = "clickBtn('btn9')" />
        </div>
        
-   <input type="button" id = "btnReset" onclick = "reset()" value = "Restart game"/>
-   
-   <div id= displayWins>
+   <input type="button" id = "btnReset" onclick = "game.reset()" value = "Restart game"/>
+   <div id = "areaWins">
                 <p id= "Xwins"></p>
                 <p id= "Owins"></p>
                 
@@ -41,4 +40,3 @@
  </body> 
   
 </html>
-
